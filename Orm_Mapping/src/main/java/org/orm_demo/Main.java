@@ -34,6 +34,13 @@ public class Main {
 
         transaction.commit();
 
+        Employee em1 = session.getReference(Employee.class, 152);
+
+         System.out.println(em1);
+
+        session.close();
+        fct.close();
+
 
     }
 }
