@@ -21,9 +21,9 @@ public class Main {
 //            System.out.println("i = " + i);
 //        }
         Student s1 = new Student();
-        s1.getId(101);
-        s1.getName("HAPPY");
-        s1.getEdu("B.E");
+      s1.setId(120);
+       s1.setName("Darshan");
+        s1.setEdu("MBA");
 
         Configuration config = new Configuration();
         config.addAnnotatedClass(com.alin.Student.class);
