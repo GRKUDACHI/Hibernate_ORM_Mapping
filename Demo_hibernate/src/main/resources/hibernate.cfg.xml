@@ -1,11 +1,13 @@
 <hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
     <session-factory>
-        <property name="hibernate.connection.driver_class">com.mysql</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate_demos</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/ORM_hibernate</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">Admin09</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
 
-        <property name="hibernate.hbm2ddl.auto">create</property>
-        <!-- Change to create, create-drop, or validate as needed -->
+
     </session-factory>
 </hibernate-configuration>
